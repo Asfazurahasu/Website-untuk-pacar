@@ -1,0 +1,244 @@
+/* Resetting default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    background-color: #111;  /* Background hitam */
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    color: #ff69b4; /* Pink */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar .logo:hover {
+    color: #f8a0c3;
+}
+
+.navbar .social-link {
+    color: #ff69b4;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar .social-link:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero-section {
+    text-align: center;
+    background-color: #222;
+    color: #ff69b4;
+    padding: 100px 20px;
+    margin-top: 60px;
+    font-size: 1.5em;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+}
+
+/* Photo Gallery */
+.photo-gallery {
+    padding: 50px;
+    background: #333;
+    text-align: center;
+}
+
+.photo-gallery h2 {
+    font-size: 2.5rem;
+    color: #ff69b4;
+    margin-bottom: 40px;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Instagram link */
+.instagram-link a {
+    font-size: 20px;
+    color: #ff69b4;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+.instagram-link a:hover {
+    color: #f8a0c3;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 50px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Login Page Styling */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-box {
+    background: #222;
+    padding: 40px 50px;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 3px 4px 10px rgba(3, 3, 3, 3.6);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-box:hover {
+    transform: scale(1.02); /* Efek hover untuk login box */
+    box-shadow: 5px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.login-box h2 {
+    color: #ff69b4;  /* Pink */
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+/* Input Group */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    font-size: 1rem;
+    color: #ddd;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #444;
+    background-color: #333;
+    color: #fff;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: #ff69b4;
+}
+
+/* Tombol Login */
+.login-btn {
+    background-color: #ff69b4;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+}
+
+.login-btn:hover {
+    background-color: #f8a0c3;
+    transform: translateY(-3px); /* Efek angkat tombol */
+}
+
+.login-btn:active {
+    background-color: #d85e91;
+    transform: translateY(0);
+}
+
+/* Style untuk galeri foto */
+.photo-gallery {
+    text-align: center;
+    padding: 20px;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.gallery-item {
+    width: 250px; /* Ukuran gambar lebih kecil agar lebih estetik */
+    height: 250px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Agar gambar tidak terdistorsi */
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05); /* Efek hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
